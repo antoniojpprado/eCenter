@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-20 00:04-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/company/forms.py:7
+msgid "Center name"
+msgstr "Nome do Centro"
+
+#: apps/company/forms.py:8 apps/company/models.py:10
+msgid "Name"
+msgstr "Nome"
+
+#: apps/company/models.py:9
+msgid "Company name"
+msgstr "Nome do Centro"
+
+#: apps/company/templates/company_form.html:15
+msgid "Center"
+msgstr "Centro"
+
+#: apps/company/templates/company_form.html:41
+#: apps/company_user/templates/company_user/companyuser_form.html:38
+msgid "Save"
+msgstr "Salvar"
+
+#: apps/company/templates/company_form.html:46
+#: apps/company_user/templates/company_user/companyuser_form.html:43
+msgid "Delete"
+msgstr "Excluir"
+
+#: apps/company/templates/company_form.html:51
+#: apps/company_user/templates/company_user/companyuser_form.html:48
+#: apps/company_user/templates/company_user/companyuser_list.html:41
+#: apps/company_user/templates/company_user/companyuser_listOLD.html:20
+msgid "Close"
+msgstr "Fechar"
+
+#: apps/company_user/templates/company_user/companyuser_confirm_delete.html:8
+msgid "Confirms the deletion of the: "
+msgstr "Confirma a exclusão do registro:"
+
+#: apps/company_user/templates/company_user/companyuser_confirm_delete.html:13
+msgid "Process"
+msgstr "Processar"
+
+#: apps/company_user/templates/company_user/companyuser_form.html:15
+#: apps/company_user/templates/company_user/companyuser_list.html:12
+msgid "Users"
+msgstr "Usuário"
+
+#: apps/company_user/templates/company_user/companyuser_listOLD.html:11
+#: apps/company_user/templates/company_user/companyuser_listOLD.html:34
+#: templates/menu_top.html:73
+msgid "User"
+msgstr "Usuário"
+
+#: apps/company_user/templates/company_user/companyuser_listOLD.html:16
+msgid "New"
+msgstr "Novo"
+
+#: eCenter/settings.py:106 templates/menu_top.html:63
+msgid "English"
+msgstr "Inglês"
+
+#: eCenter/settings.py:107
+msgid "Portugues"
+msgstr "Português"
+
+#: templates/footer.html:26
+msgid "Developed by Antonio José"
+msgstr "Desenvolvido por Antonio José"
+
+#: templates/menu-OLD.html:206 templates/menu_left.html:41
+msgid "Registrations"
+msgstr "Cadastros"
+
+#: templates/menu-OLD.html:213 templates/menu_left.html:47
+msgid "Register Patient"
+msgstr "Cadastro de Assistido"
+
+#: templates/menu-OLD.html:220 templates/menu_left.html:55
+msgid "Reception"
+msgstr "Recepção"
+
+#: templates/menu-OLD.html:226 templates/menu_left.html:62
+msgid "Orientation"
+msgstr "Orientação"
+
+#: templates/menu-OLD.html:232 templates/menu_left.html:69
+msgid "Schedule"
+msgstr "Agenda"
+
+#: templates/menu-OLD.html:238 templates/menu_left.html:76
+msgid "Attendance"
+msgstr "Atendimento"
+
+#: templates/menu-OLD.html:245 templates/menu_left.html:83
+msgid "Administration"
+msgstr "Administração"
+
+#: templates/menu-OLD.html:252 templates/menu_left.html:89
+msgid "Register Center"
+msgstr "Cadastro do Centro"
+
+#: templates/menu-OLD.html:257 templates/menu_left.html:94
+msgid "Register Function"
+msgstr "Cadastro de Função"
+
+#: templates/menu-OLD.html:262 templates/menu_left.html:99
+msgid "Register Type of Treatment"
+msgstr "Cadastro de Tipo de Tratamento"
+
+#: templates/menu-OLD.html:267 templates/menu_left.html:104
+msgid "Register Worker"
+msgstr "Cadastro de Trabalhador"
+
+#: templates/menu-OLD.html:272 templates/menu_left.html:109
+msgid "Register System Users"
+msgstr "Cadastro de Usuário do Sistema"
+
+#: templates/menu_left.html:33
+msgid "Dashboard"
+msgstr "Painel"
+
+#: templates/menu_top.html:29
+msgid "Search ..."
+msgstr "Procurar ..."
+
+#: templates/menu_top.html:44
+msgid "Language"
+msgstr "Idioma"
+
+#: templates/menu_top.html:54
+#, fuzzy
+#| msgid "Portugues"
+msgid "Portuguese"
+msgstr "Português"
+
+#: templates/menu_top.html:79
+msgid "Profile"
+msgstr "Perfil"
+
+#: templates/menu_top.html:80
+msgid "Settings"
+msgstr "Configurações"
+
+#: templates/menu_top.html:82
+msgid "Logout"
+msgstr "Sair"
+
+#: templates/registration/login.html:102 templates/registration/login.html:117
+#: templates/registration/login.html:129
+msgid "Fail!"
+msgstr "Falha!"
+
+#: templates/registration/login.html:103
+msgid "Your username or your password didn't match."
+msgstr "Seu nome de login ou sua senha não confere."
+
+#: templates/registration/login.html:104
+msgid "Please try again."
+msgstr "Por favor, tente novamente"
+
+#: templates/registration/login.html:118
+msgid "Your account doesn't have access to this page."
+msgstr "Suas permissões não lhe concedem acesso a esta página."
+
+#: templates/registration/login.html:119
+msgid "To proceed, please login with an accountthat has access."
+msgstr "Para continuar, por favor, realize novo acesso com a devida permissão."
+
+#: templates/registration/login.html:130
+msgid "Please login to see this page"
+msgstr "Por favor, efetue login para ter acesso."
+
+#: templates/registration/login.html:139
+msgid "User Login"
+msgstr "Identificação de Usuário"
+
+#: templates/registration/login.html:143
+msgid "Username"
+msgstr "Nome de usuário"
+
+#: templates/registration/login.html:148
+msgid "Password"
+msgstr "Senha"
+
+#: templates/registration/login.html:153
+msgid "Login"
+msgstr "Acessar"
+
+#: templates/registration/login.html:161
+msgid "Remember me"
+msgstr "Salvar meus dados."
+
+#: templates/registration/login.html:164
+msgid "Forgot Password?"
+msgstr "Esqueceu a Senha?"

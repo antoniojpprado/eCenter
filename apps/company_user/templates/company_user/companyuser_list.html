@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load bootstrap %}
+
+{% block main %}
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">{% trans "Users" %}</h4>
+                </div>
+
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <tbody>
+                                {% for user in object_list %}
+                                    <tr>
+                                        <td>
+                                            <a  class="text-dark" href="{% url 'company_user_edit' user.id %}">
+                                                {{ user.name }}
+                                            </a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- End Card Body -->
+
+                <!-- Card Footer -->
+                <div class="card-footer">
+                    <div class="row justify-content-end">
+                        <div class="col col-auto">
+                            <a href="{% url 'home' %}"
+                               class="btn btn-secondary btn-sm">
+                                {% trans "Close" %}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Card Footer -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

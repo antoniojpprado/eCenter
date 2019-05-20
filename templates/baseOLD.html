@@ -1,0 +1,73 @@
+{% load static %}
+
+<!doctype html>
+<html lang="pt-br">
+
+<style>
+.panel-header {
+  height: 60px;
+  padding-top: 50px;
+  padding-bottom: 45px;
+  background: #141E30;
+  /* fallback for old browsers */
+  background: linear-gradient(to right, #0c2646 0%, #204065 60%, #2a5788 100%);
+  position: relative;
+  overflow: hidden; }
+  .panel-header .header .title {
+    color: #FFFFFF; }
+  .panel-header .header .category {
+    max-width: 600px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    font-size: 13px; }
+    .panel-header .header .category a {
+      color: #FFFFFF; }
+
+@media (max-width: 750px) {
+  .panel-header {
+  height: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet"
+          href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+    <title>{% block title %} {% endblock%}</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2">
+            {% block menu %}
+                {% include 'menu.html' %}
+            {% endblock%}
+        </div>
+        <div class="col-sm-7 col-md-8 col-lg-9 col-xl-10">
+            <div class="panel-header">
+                <div class="row">
+                </div>
+            </div>
+            {% block main %}
+            {% endblock %}
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load bootstrap %}
+
+{% block main %}
+<div class="card">
+
+    <div class="card-header text-white" style="background: #1D4A5A">
+        <div class="row">
+            <div class="col">
+                <h3><b>{% trans "User" %}</b></h3>
+            </div>
+            <div class="col col-auto">
+                <a href="{% url 'company_user_new' %}"
+                   class="btn btn-info btn-sm">
+                    {% trans "New" %}
+                </a>
+                <a href="{% url 'home' %}"
+                   class="btn btn-secondary btn-sm">
+                    {% trans "Close" %}
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-body bg-light">
+
+        <div class="row">
+            <div class="col-12">
+
+                <table class="table table-sm table-bordered table-hover">
+                    <thead class="table-secondary">
+                        <tr>
+                            <th scope="col">{% trans "User" %}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for user in object_list %}
+                            <tr>
+                                <td>
+                                    <a href=
+                                            "{% url 'company_user_edit' user.id %}">
+                                        {{ user.name }}
+                                    </a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+    </div> <!-- fim body do card -->
+</div> <!-- fim card -->
+{% endblock %}

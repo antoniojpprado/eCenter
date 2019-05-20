@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block main %}
+<!--Bem vindo {{ usuario.companyuser.name }}!!!<br>-->
+<!--Empresa: {{ usuario.companyuser.company.name }}!!!-->
+
+<div class="img-responsive text-center">
+    <a class="img-fluid" alt="Responsive image">
+          <img class="mx-auto d-block"
+               src="{% static 'image/oconsolador.jpg' %}"
+               width=100%
+               alt="Consolador">
+    </a>
+</div>
+
+{% endblock %}

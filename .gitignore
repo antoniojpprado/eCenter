@@ -1,0 +1,7 @@
+.idea
+.vscode
+*.pyc
+venv
+*.sqlite3
+app/__pycache__/*
+eCenter/__pycache__/*

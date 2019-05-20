@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<form method="POST">
+    {% csrf_token %}
+
+    <h4>{% trans "Confirms the deletion of the: "{{ object }} %}</h4>
+
+    {{ form }}
+
+    <button type="submit" class="btn btn-danger">
+        {% trans "Process" %}
+    </button>
+</form>
+
+{% endblock %}

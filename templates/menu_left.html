@@ -1,0 +1,122 @@
+{% load static %}
+{% load i18n %}
+
+<style>
+
+</style>
+
+{% if user.is_authenticated %}
+
+    <!-- Left Sidebar -->
+    <div class="sidebar" data-color="blue">
+
+        <!-- Image Logo -->
+        <div class="logo">
+            <a href="{% url 'home' %}"
+                 class="simple-text logo-normal">
+                  <img class="d-inline-block align-midle"
+                       src="{% static 'image/logo.png' %}"
+                       alt=""
+                       width="80"
+                       height="40"
+                       alt="Logo">
+                <h6><small>{{ user.companyuser.company.name }}</small></h6>
+            </a>
+        </div>
+        <!-- End Image Logo -->
+
+        <div class="sidebar-wrapper" id="sidebar-wrapper">
+          <ul class="nav">
+              <li>
+                  <a href="{% url 'panel_view' %}">
+                      <i class="now-ui-icons design_app"></i>
+                      <p>{% trans "Dashboard" %}</p>
+                  </a>panel_view
+              </li>
+
+              <!-- Options the Navbar -->
+              <li data-toggle="collapse" data-target="#rec" class="collapsed">
+                  <a href="#">
+                      <i class="now-ui-icons education_atom"></i>
+                      <p>{% trans "Registrations" %}</p>
+                  </a>
+              </li>
+              <ul class="sub-menu collapse" id="rec">
+                  <li>
+                      <a href="#">
+                          {% trans "Register Patient" %}
+                      </a>
+                  </li>
+              </ul>
+
+              <li>
+                  <a href="#">
+                      <i class="now-ui-icons location_map-big"></i>
+                      <p>{% trans "Reception" %}</p>
+                  </a>
+              </li>
+
+              <li>
+                  <a href="#">
+                      <i class="now-ui-icons ui-1_bell-53"></i>
+                      <p>{% trans "Orientation" %}</p>
+                  </a>
+              </li>
+
+              <li>
+                  <a href="#">
+                      <i class="now-ui-icons users_single-02"></i>
+                      <p>{% trans "Schedule" %}</p>
+                  </a>
+              </li>
+
+              <li>
+                  <a href="#">
+                      <i class="now-ui-icons design_bullet-list-67"></i>
+                      <p>{% trans "Attendance" %}</p>
+                  </a>
+              </li>
+
+              <li data-toggle="collapse" data-target="#adm" class="collapsed">
+                  <a href="#">
+                      <i class="now-ui-icons text_caps-small"></i>
+                      <p>{% trans "Administration" %}</p>
+                  </a>
+              </li>
+              <ul class="sub-menu collapse" id="adm">
+                  <li>
+                      <a href="{% url 'company_edit' user.companyuser.company.id %}">
+                          {% trans "Register Center" %}
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          {% trans "Register Function" %}
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          {% trans "Register Type of Treatment" %}
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          {% trans "Register Worker" %}
+                      </a>
+                  </li>
+                  <li>
+                      <a href="{% url 'company_user_list' %}">
+                          {% trans "Register System Users" %}
+                      </a>
+                  </li>
+
+              </ul>
+              <!-- End Options the Navbar -->
+
+          </ul>
+
+        </div>
+    </div>
+        <!-- End Left Sidebar -->
+
+{% endif %}
